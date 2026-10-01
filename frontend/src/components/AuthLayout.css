@@ -1,0 +1,67 @@
+.auth-shell {
+  display: flex;
+  min-height: 100vh;
+}
+
+.auth-motif {
+  flex: 1;
+  background: linear-gradient(160deg, var(--accent), var(--accent-hover));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  padding: 40px;
+}
+
+.auth-motif-svg {
+  width: 220px;
+  height: 220px;
+  margin-bottom: 24px;
+}
+
+.auth-motif-text h1 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.auth-motif-text p {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+}
+
+.auth-panel {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.auth-panel-inner {
+  width: 100%;
+  max-width: 380px;
+}
+
+.auth-panel-brand {
+  display: none;
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--accent);
+  margin-bottom: 24px;
+}
+
+/* Mobile: collapse the decorative panel, show brand name inline instead */
+@media (max-width: 860px) {
+  .auth-motif {
+    display: none;
+  }
+
+  .auth-panel-brand {
+    display: block;
+  }
+}

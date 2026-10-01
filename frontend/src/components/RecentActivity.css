@@ -1,0 +1,57 @@
+.recent-activity {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+.recent-activity h2 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.recent-activity-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.recent-activity-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.recent-activity-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: rgba(109, 91, 208, 0.1);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.recent-activity-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.recent-activity-time {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.recent-activity-empty {
+  color: var(--text-muted);
+  font-size: 14px;
+}
