@@ -12,10 +12,10 @@ import './Sidebar.css';
 
 const navItems = [
   { label: 'Dashboard', path: '/dashboard', icon: LayoutDashboard, enabled: true },
-  { label: 'My Files', path: '/files', icon: Folder, enabled: false },
+  { label: 'My Files', path: '/files', icon: Folder, enabled: true },
   { label: 'Shared With Me', path: '/shared', icon: Share2, enabled: false },
   { label: 'Recent', path: '/recent', icon: Clock, enabled: false },
-  { label: 'Trash', path: '/trash', icon: Trash2, enabled: false },
+  { label: 'Trash', path: '/trash', icon: Trash2, enabled: true },
   { label: 'Settings', path: '/settings', icon: Settings, enabled: false },
 ];
 

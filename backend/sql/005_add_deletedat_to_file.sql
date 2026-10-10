@@ -1,0 +1,1 @@
+ALTER TABLE File ADD COLUMN deletedAt DATETIME NULL AFTER isDeleted;

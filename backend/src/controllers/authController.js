@@ -40,6 +40,13 @@ const register = async (req, res) => {
       [name, email, hashedPassword]
     );
 
+    // 7. Generate a JWT immediately, same as login does
+    const token = jwt.sign(
+      { userId: result.insertId, email },
+      process.env.JWT_SECRET,
+      { expiresIn: process.env.JWT_EXPIRES_IN }
+    );
+
     // 5. Never return the password or password hash
     const safeUser = {
       id: result.insertId,

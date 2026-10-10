@@ -9,7 +9,7 @@ import StorageCard from '../components/StorageCard';
 import RecentFiles from '../components/RecentFiles';
 import RecentActivity from '../components/RecentActivity';
 import UploadModal from '../components/UploadModal';
-import { mockStats, mockFiles, mockActivity } from '../data/mockDashboardData';
+import { mockStats, mockRecentFiles, mockActivity } from '../data/mockDashboardData';
 import './Dashboard.css';
 
 function getGreeting() {
@@ -94,7 +94,7 @@ function Dashboard() {
 
           <div className="dashboard-grid">
             <div className="dashboard-grid-main">
-              <RecentFiles files={mockFiles} onUploadClick={() => setUploadModalOpen(true)} />
+              <RecentFiles files={mockRecentFiles} onUploadClick={() => setUploadModalOpen(true)} />
               <RecentActivity activities={mockActivity} />
             </div>
             <div className="dashboard-grid-side">

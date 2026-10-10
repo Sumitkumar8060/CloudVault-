@@ -1,0 +1,146 @@
+.share-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(30, 27, 46, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  padding: 20px;
+}
+
+.share-modal {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 28px;
+  max-width: 400px;
+  width: 100%;
+  position: relative;
+}
+
+.share-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.share-modal-icon {
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.share-modal h3 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  word-break: break-word;
+}
+
+.share-modal-status,
+.share-modal-error {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.share-modal-error {
+  color: var(--error);
+}
+
+.share-modal-helptext {
+  color: var(--text-muted);
+  font-size: 13.5px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.share-modal-link-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.share-modal-link-input {
+  flex: 1;
+  padding: 9px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 13px;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.share-modal-copy-btn {
+  padding: 9px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.share-modal-copy-btn:hover {
+  background: var(--bg);
+}
+
+.share-modal-expiry {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.share-modal-revoke-btn {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--error);
+  border-radius: 10px;
+  background: none;
+  color: var(--error);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.share-modal-revoke-btn:hover {
+  background: #FDECEA;
+}
+
+.share-modal-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.share-modal-select {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  background: var(--surface);
+}
+
+.share-modal-create-btn {
+  width: 100%;
+  padding: 11px;
+  border: none;
+  border-radius: 10px;
+  background: var(--accent);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.share-modal-create-btn:hover {
+  background: var(--accent-hover);
+}
+
+.share-modal-create-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

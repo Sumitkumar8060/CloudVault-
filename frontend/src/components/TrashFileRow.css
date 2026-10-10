@@ -1,0 +1,84 @@
+.trash-file-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.trash-file-row:last-child {
+  border-bottom: none;
+}
+
+.trash-file-row-main {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+}
+
+.trash-file-row-icon {
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.trash-file-row-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.trash-file-row-name {
+  font-size: 14.5px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.trash-file-row-meta {
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+
+.trash-file-row-date {
+  font-size: 13px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.trash-file-row-actions {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.trash-file-row-btn {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  padding: 6px;
+  cursor: pointer;
+}
+
+.trash-file-row-btn:hover {
+  background: var(--bg);
+}
+
+.trash-file-row-btn.danger {
+  color: var(--error);
+}
+
+.trash-file-row-btn.danger:hover {
+  background: #FDECEA;
+  border-color: var(--error);
+}
+
+@media (max-width: 600px) {
+  .trash-file-row-date {
+    display: none;
+  }
+}

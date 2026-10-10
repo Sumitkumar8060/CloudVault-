@@ -9,9 +9,13 @@ npm install mysql2
 npm install bcrypt
 
 npm install jsonwebtoken(to login)
+npm install multer
 
-
-
+for mysql database->
+mysql -u root -p cloudvault1
+source sql/002_create_file_table.sql;
+SHOW TABLES;
+source sql/005_add_deletedat_to_file.sql
 frontend->
 
 npm install react-router-dom axios

@@ -1,0 +1,55 @@
+.myfiles-content {
+  padding: 28px 32px 60px;
+}
+
+.myfiles-title {
+  font-family: 'Manrope', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.myfiles-subtitle {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.myfiles-list-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 8px 20px;
+}
+
+.myfiles-empty {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.myfiles-empty-icon {
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.myfiles-empty-title {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.myfiles-empty-subtitle {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.myfiles-loading {
+  text-align: center;
+  margin-top: 100px;
+  color: var(--text-muted);
+}
+
+@media (max-width: 600px) {
+  .myfiles-content {
+    padding: 20px 16px 40px;
+  }
+}

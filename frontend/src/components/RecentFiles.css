@@ -17,7 +17,7 @@
   flex-direction: column;
 }
 
-.file-row {
+/* .file-row {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -75,7 +75,7 @@
   cursor: not-allowed;
   padding: 4px;
   flex-shrink: 0;
-}
+} */
 
 .recent-files-empty {
   text-align: center;
@@ -86,6 +86,7 @@
   color: var(--text-muted);
   margin-bottom: 12px;
 }
+
 
 .recent-files-empty-title {
   font-weight: 700;
@@ -112,8 +113,8 @@
   background: var(--accent-hover);
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .file-row-date {
     display: none;
   }
-}
+} */
