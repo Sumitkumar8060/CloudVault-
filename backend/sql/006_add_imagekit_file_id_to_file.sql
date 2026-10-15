@@ -1,0 +1,3 @@
+
+ALTER TABLE File
+ADD COLUMN storageFileId VARCHAR(255) NULL AFTER storagePath;

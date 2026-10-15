@@ -1,5 +1,6 @@
 backend->
 
+npm install imagekit multer dotenv
 npm init -y
 npm install express cors dotenv
 npm install --save-dev nodemon
@@ -12,10 +13,14 @@ npm install jsonwebtoken(to login)
 npm install multer
 
 for mysql database->
+mysql -u root -p docualert
 mysql -u root -p cloudvault1
 source sql/002_create_file_table.sql;
 SHOW TABLES;
 source sql/005_add_deletedat_to_file.sql
+for aiven->
+mysql -h YOUR_AIVEN_HOST -P YOUR_AIVEN_PORT -u YOUR_AIVEN_USER -p --ssl-mode=REQUIRED
+
 frontend->
 
 npm install react-router-dom axios
